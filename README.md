@@ -1,5 +1,5 @@
-# Dudz
-## Controle de Estoque Interno para Loja de Roupas
+# Dudz 
+## Controle de Estoque Interno para Loja de Roupas (in progress)
 Este repositório contém um programa desenvolvido para gerenciar o controle de estoque interno de uma loja de roupas. O sistema permite organizar, monitorar e atualizar as informações de produtos de forma eficiente, garantindo maior controle sobre o inventário.
 
 ### Funcionalidades
