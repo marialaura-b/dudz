@@ -12,7 +12,7 @@ public class Roupa { //Reprenta as roupas em estoque, no banco de dados
     private Long id;
     private String nome;
     private String codigoDeBarras;
-    private String status; // Disponível, Na casa de cliente, Vendida
+    private String status; // Disponível, na casa do cleinte ou vendida
 
     // Getters e Setters
     public Long getId() {
