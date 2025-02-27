@@ -2,14 +2,19 @@ package org.example;
 
 public class Produto {
     private String nome;
-    private String descrição;
-    private double preço;
+    private String descricao;
+    private double preco;
 
+    public Produto(){
+        this.nome = "";
+        this.descricao = "";
+        this.preco = 0;
+    }
 
-    public Produto(String nome, String descrição, double preço){
+    public Produto(String nome, String descricao, double preco){
         this.setNome(nome);
-        this.setDescrição(descrição);
-        this.setPreço(preço);
+        this.setDescricao(descricao);
+        this.setPreco(preco);
     }
 
     public String getNome() {
@@ -20,19 +25,19 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getDescrição() {
-        return descrição;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public double getPreço() {
-        return preço;
+    public double getPreco() {
+        return preco;
     }
 
-    public void setPreço(double preço) {
-        this.preço = preço;
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }

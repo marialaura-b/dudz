@@ -11,12 +11,13 @@ public class Carrinho { //vai receber os produtos
 
     public void adicionar(Produto p) {
         produtos.add(p);
+        System.out.println("Produto "+p.getNome()+" foi adicionado no carrinho");
     }
 
-    public Produto remover(String nome){
+    public void remover(String nome){
         int codigo = -1;
         for (int i = 0; i < produtos. size(); i++) {
-            if (produtos.get(i).equals(nome)) {
+            if (produtos.get(i).getNome().equals(nome)) {
                 codigo = i;
                 break;
             } else {
@@ -25,9 +26,13 @@ public class Carrinho { //vai receber os produtos
         }
 
         if (codigo == -1) {
-            return null;
+            System.out.println("O produto não foi encontrado");
         } else {
-            return "O produto "+nome+" foi removido";
+            System.out.println("O produto "+nome+" foi removido do carrinho!");
         }
+    }
+
+    public ArrayList<Produto> getProdutos(){
+        return produtos;
     }
 }
